@@ -21,5 +21,5 @@ export interface SentryModuleAsyncOptions extends Pick<ModuleMetadata, 'imports'
     inject?: Array<InjectionToken | OptionalFactoryDependency> | never;
     useClass?: Type<SentryOptionsFactory>;
     useExisting?: Type<SentryOptionsFactory>;
-    useFactory?: (...args: unknown[]) => Promise<SentryModuleOptions> | SentryModuleOptions;
+    useFactory?: (...args: any[]) => Promise<SentryModuleOptions> | SentryModuleOptions;
 }
